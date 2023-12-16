@@ -1,35 +1,223 @@
-window.addEventListener("load", START)
+window.addEventListener("load", START);
 
 function START(){
-	document.getElementById("btnsub").disabled=true
-	document.getElementById("txtinp").addEventListener("keypress", ENABLE);
+	document.getElementById("btnsub").disabled=true;
+	document.getElementById("txtnum").addEventListener("keypress", ENABLE);
 	document.getElementById("btnsub").addEventListener("click", FORLOOP);
 }
 
 function ENABLE(){
-	document.getElementById("btnsub").disabled=false
+	document.getElementById("btnsub").disabled=false;
 }
 
 function FORLOOP(){
-	var inp= document.getElementById("txtinp").value;
-	document.getElementById("lblres").textContent= ""
-	document.getElementById("lblres").textContent+=inp
-	switch(true){
-		case inp<6:
-			alert("number is less than 6");
-			break;
-		case inp>20:
-			alert("number is greater than 20");
-			break;
-		case inp%1!=0:
-			alert("number is a decimal")
-			break;
-		default:
+	var inp=document.getElementById("txtnum").value;
+	document.getElementById("lblres").textContent= "";
+	if (inp%2==0){
+		document.getElementById("lblres").textContent+= inp + " even";
+	}
+		else{
+			document.getElementById("lblres").textContent+= inp + " odd";
+		}
+//switch(true) checks for conditions (case conditions: inp<6, inp>20 and so on) that are true.
+//if found will do the alert in them. if not found will go to default 
+//basically meaning that the user inputted the number correctly (6-20)
+//how found: alerted the condition in the part 2 assignment and got back true or false. 
+//made more sense to use true:
+//	switch(true){							
+//		case inp<6:			
+//			alert("number is less than 6"); 
+//			break;
+//		case inp>20:
+//			alert("number is greater than 20");
+//			break;
+//		case inp%1!=0:
+//			alert("number is a decimal")
+//			break;
+//		default:
+//			for(let i=1; i<5; i=i+1){
+//				inp=inp*2;
+//				switch(true){
+//					case inp%2==0:
+//						document.getElementById("lblres").textContent+= ", "+ inp + " even";
+//						break;
+//					case inp%2==1:
+//						document.getElementById("lblres").textContent+= ", " + inp + " odd";
+//						break;
+//					}
+//			}
+//			break;
+//		} 
+// how you desire us to do it:
+	switch(inp){		
+		case "6":
 			for(let i=1; i<5; i=i+1){
-				inp= inp*2
-				document.getElementById("lblres").textContent+= ", " + inp + " even"
-				
+				inp=inp*2;
+				if (inp%2==0){
+					document.getElementById("lblres").textContent+= ", " + inp + " even";
+				}
+				else{
+					document.getElementById("lblres").textContent+= ", " + inp + " odd";
+					}
 			}
 			break;
-	}
+		case "7":
+			for(let i=1; i<5; i=i+1){
+				inp=inp*2;
+				if (inp%2==0){
+					document.getElementById("lblres").textContent+= ", " + inp + " even";
+				}
+				else{
+					document.getElementById("lblres").textContent+= ", " + inp + " odd";
+					}
+			}
+			break;
+		case "8":
+			for(let i=1; i<5; i=i+1){
+				inp=inp*2;
+				if (inp%2==0){
+					document.getElementById("lblres").textContent+= ", " + inp + " even";
+				}
+				else{
+					document.getElementById("lblres").textContent+= ", " + inp + " odd";
+					}
+			}
+			break;
+		case "9":
+			for(let i=1; i<5; i=i+1){
+				inp=inp*2;
+				if (inp%2==0){
+					document.getElementById("lblres").textContent+= ", " + inp + " even";
+				}
+				else{
+					document.getElementById("lblres").textContent+= ", " + inp + " odd";
+					}
+			}
+			break;
+		case "10":
+			for(let i=1; i<5; i=i+1){
+				inp=inp*2;
+				if (inp%2==0){
+					document.getElementById("lblres").textContent+= ", " + inp + " even";
+				}
+				else{
+					document.getElementById("lblres").textContent+= ", " + inp + " odd";
+					}
+			}
+			break;
+		case "11":
+			for(let i=1; i<5; i=i+1){
+				inp=inp*2;
+				if (inp%2==0){
+					document.getElementById("lblres").textContent+= ", " + inp + " even";
+				}
+				else{
+					document.getElementById("lblres").textContent+= ", " + inp + " odd";
+					}
+			}		
+			break;
+		case "12":
+			for(let i=1; i<5; i=i+1){
+				inp=inp*2;
+				if (inp%2==0){
+					document.getElementById("lblres").textContent+= ", " + inp + " even";
+				}
+				else{
+					document.getElementById("lblres").textContent+= ", " + inp + " odd";
+					}
+			}		
+			break;
+		case "13":
+			for(let i=1; i<5; i=i+1){
+				inp=inp*2;
+				if (inp%2==0){
+					document.getElementById("lblres").textContent+= ", " + inp + " even";
+				}
+				else{
+					document.getElementById("lblres").textContent+= ", " + inp + " odd";
+					}
+			}		
+			break;
+		case "14":
+			for(let i=1; i<5; i=i+1){
+				inp=inp*2;
+				if (inp%2==0){
+					document.getElementById("lblres").textContent+= ", " + inp + " even";
+				}
+				else{
+					document.getElementById("lblres").textContent+= ", " + inp + " odd";
+					}
+			}		
+			break;
+		case "15":
+			for(let i=1; i<5; i=i+1){
+				inp=inp*2;
+				if (inp%2==0){
+					document.getElementById("lblres").textContent+= ", " + inp + " even";
+				}
+				else{
+					document.getElementById("lblres").textContent+= ", " + inp + " odd";
+					}
+			}		
+			break;
+		case "16":
+			for(let i=1; i<5; i=i+1){
+				inp=inp*2;
+				if (inp%2==0){
+					document.getElementById("lblres").textContent+= ", " + inp + " even";
+				}
+				else{
+					document.getElementById("lblres").textContent+= ", " + inp + " odd";
+					}
+			}		
+			break;
+		case "17":
+			for(let i=1; i<5; i=i+1){
+				inp=inp*2;
+				if (inp%2==0){
+					document.getElementById("lblres").textContent+= ", " + inp + " even";
+				}
+				else{
+					document.getElementById("lblres").textContent+= ", " + inp + " odd";
+					}
+			}		
+			break;
+		case "18":
+			for(let i=1; i<5; i=i+1){
+				inp=inp*2;
+				if (inp%2==0){
+					document.getElementById("lblres").textContent+= ", " + inp + " even";
+				}
+				else{
+					document.getElementById("lblres").textContent+= ", " + inp + " odd";
+					}
+			}		
+			break;
+
+		case "19":
+			for(let i=1; i<5; i=i+1){
+				inp=inp*2;
+				if (inp%2==0){
+					document.getElementById("lblres").textContent+= ", " + inp + " even";
+				}
+				else{
+					document.getElementById("lblres").textContent+= ", " + inp + " odd";
+					}
+			}		
+			break;
+		case "20":
+			for(let i=1; i<5; i=i+1){
+				inp=inp*2;
+				if (inp%2==0){
+					document.getElementById("lblres").textContent+= ", " + inp + " even";
+				}
+				else{
+					document.getElementById("lblres").textContent+= ", " + inp + " odd";
+					}
+			}		
+			break;
+		default:
+			alert("number is a isn't an integer, less than 6, or greater than 20");			
+			break;
+		}
 }
