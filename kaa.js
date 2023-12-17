@@ -11,14 +11,13 @@ function ENABLE(){
 }
 
 function FORLOOP(){
-	var inp=document.getElementById("txtnum").value;
-	document.getElementById("lblres").textContent= "";
-	if (inp%2==0){
-		document.getElementById("lblres").textContent+= inp + " even";
+	var dis=document.getElementById("txtnum").value
+	if (dis==""){
+		document.getElementById("btnsub").disabled=true;
 	}
-		else{
-			document.getElementById("lblres").textContent+= inp + " odd";
-		}
+	else{
+		var inp=document.getElementById("txtnum").value;
+		document.getElementById("lblres").textContent="";
 //switch(true) checks for conditions (case conditions: inp<6, inp>20 and so on) that are true.
 //if found will do the alert in them. if not found will go to default 
 //basically meaning that the user inputted the number correctly (6-20)
@@ -35,6 +34,13 @@ function FORLOOP(){
 //			alert("number is a decimal")
 //			break;
 //		default:
+//			document.getElementById("lblres").textContent= inp
+//				if (inp%2==0){
+//						document.getElementById("lblres").textContent+= " even";
+//					}
+//					else{
+//						document.getElementById("lblres").textContent+= " odd";
+//						}
 //			for(let i=1; i<5; i=i+1){
 //				inp=inp*2;
 //				switch(true){
@@ -49,175 +55,280 @@ function FORLOOP(){
 //			break;
 //		} 
 // how you desire us to do it:
-	switch(inp){		
-		case "6":
-			for(let i=1; i<5; i=i+1){
-				inp=inp*2;
+		switch(inp){		
+			case "6":
+				document.getElementById("lblres").textContent= inp
 				if (inp%2==0){
-					document.getElementById("lblres").textContent+= ", " + inp + " even";
-				}
-				else{
-					document.getElementById("lblres").textContent+= ", " + inp + " odd";
+						document.getElementById("lblres").textContent+= " even";
 					}
-			}
-			break;
-		case "7":
-			for(let i=1; i<5; i=i+1){
-				inp=inp*2;
+					else{
+						document.getElementById("lblres").textContent+= " odd";
+						}
+				for(let i=1; i<5; i=i+1){
+					inp=inp*2;
+					if (inp%2==0){
+						document.getElementById("lblres").textContent+= ", " + inp + " even";
+					}
+					else{
+						document.getElementById("lblres").textContent+= ", " + inp + " odd";
+						}
+				}
+				break;
+			case "7":
+				document.getElementById("lblres").textContent= inp
 				if (inp%2==0){
-					document.getElementById("lblres").textContent+= ", " + inp + " even";
-				}
-				else{
-					document.getElementById("lblres").textContent+= ", " + inp + " odd";
+						document.getElementById("lblres").textContent+= " even";
 					}
-			}
-			break;
-		case "8":
-			for(let i=1; i<5; i=i+1){
-				inp=inp*2;
+					else{
+						document.getElementById("lblres").textContent+= " odd";
+						}
+				for(let i=1; i<5; i=i+1){
+					inp=inp*2;
+					if (inp%2==0){
+						document.getElementById("lblres").textContent+= ", " + inp + " even";
+					}
+					else{
+						document.getElementById("lblres").textContent+= ", " + inp + " odd";
+						}
+				}
+				break;
+			case "8":
+				document.getElementById("lblres").textContent= inp
 				if (inp%2==0){
-					document.getElementById("lblres").textContent+= ", " + inp + " even";
-				}
-				else{
-					document.getElementById("lblres").textContent+= ", " + inp + " odd";
+						document.getElementById("lblres").textContent+= " even";
 					}
-			}
-			break;
-		case "9":
-			for(let i=1; i<5; i=i+1){
-				inp=inp*2;
+					else{
+						document.getElementById("lblres").textContent+= " odd";
+						}
+				for(let i=1; i<5; i=i+1){
+					inp=inp*2;
+					if (inp%2==0){
+						document.getElementById("lblres").textContent+= ", " + inp + " even";
+					}
+					else{
+						document.getElementById("lblres").textContent+= ", " + inp + " odd";
+						}
+				}
+				break;
+			case "9":
+				document.getElementById("lblres").textContent= inp
 				if (inp%2==0){
-					document.getElementById("lblres").textContent+= ", " + inp + " even";
-				}
-				else{
-					document.getElementById("lblres").textContent+= ", " + inp + " odd";
+						document.getElementById("lblres").textContent+= " even";
 					}
-			}
-			break;
-		case "10":
-			for(let i=1; i<5; i=i+1){
-				inp=inp*2;
+					else{
+						document.getElementById("lblres").textContent+= " odd";
+						}
+				for(let i=1; i<5; i=i+1){
+					inp=inp*2;
+					if (inp%2==0){
+						document.getElementById("lblres").textContent+= ", " + inp + " even";
+					}
+					else{
+						document.getElementById("lblres").textContent+= ", " + inp + " odd";
+						}
+				}
+				break;
+			case "10":
+				document.getElementById("lblres").textContent= inp
 				if (inp%2==0){
-					document.getElementById("lblres").textContent+= ", " + inp + " even";
-				}
-				else{
-					document.getElementById("lblres").textContent+= ", " + inp + " odd";
+						document.getElementById("lblres").textContent+= " even";
 					}
-			}
-			break;
-		case "11":
-			for(let i=1; i<5; i=i+1){
-				inp=inp*2;
+					else{
+						document.getElementById("lblres").textContent+= " odd";
+						}
+				for(let i=1; i<5; i=i+1){
+					inp=inp*2;
+					if (inp%2==0){
+						document.getElementById("lblres").textContent+= ", " + inp + " even";
+					}
+					else{
+						document.getElementById("lblres").textContent+= ", " + inp + " odd";
+						}
+				}
+				break;
+			case "11":
+				document.getElementById("lblres").textContent= inp
 				if (inp%2==0){
-					document.getElementById("lblres").textContent+= ", " + inp + " even";
-				}
-				else{
-					document.getElementById("lblres").textContent+= ", " + inp + " odd";
+						document.getElementById("lblres").textContent+= " even";
 					}
-			}		
-			break;
-		case "12":
-			for(let i=1; i<5; i=i+1){
-				inp=inp*2;
+					else{
+						document.getElementById("lblres").textContent+= " odd";
+						}
+				for(let i=1; i<5; i=i+1){
+					inp=inp*2;
+					if (inp%2==0){
+						document.getElementById("lblres").textContent+= ", " + inp + " even";
+					}
+					else{
+						document.getElementById("lblres").textContent+= ", " + inp + " odd";
+						}
+				}
+				break;
+			case "12":
+				document.getElementById("lblres").textContent= inp
 				if (inp%2==0){
-					document.getElementById("lblres").textContent+= ", " + inp + " even";
-				}
-				else{
-					document.getElementById("lblres").textContent+= ", " + inp + " odd";
+						document.getElementById("lblres").textContent+= " even";
 					}
-			}		
-			break;
-		case "13":
-			for(let i=1; i<5; i=i+1){
-				inp=inp*2;
+					else{
+						document.getElementById("lblres").textContent+= " odd";
+						}
+				for(let i=1; i<5; i=i+1){
+					inp=inp*2;
+					if (inp%2==0){
+						document.getElementById("lblres").textContent+= ", " + inp + " even";
+					}
+					else{
+						document.getElementById("lblres").textContent+= ", " + inp + " odd";
+						}
+				}
+				break;
+			case "13":
+				document.getElementById("lblres").textContent= inp
 				if (inp%2==0){
-					document.getElementById("lblres").textContent+= ", " + inp + " even";
-				}
-				else{
-					document.getElementById("lblres").textContent+= ", " + inp + " odd";
+						document.getElementById("lblres").textContent+= " even";
 					}
-			}		
-			break;
-		case "14":
-			for(let i=1; i<5; i=i+1){
-				inp=inp*2;
+					else{
+						document.getElementById("lblres").textContent+= " odd";
+						}
+				for(let i=1; i<5; i=i+1){
+					inp=inp*2;
+					if (inp%2==0){
+						document.getElementById("lblres").textContent+= ", " + inp + " even";
+					}
+					else{
+						document.getElementById("lblres").textContent+= ", " + inp + " odd";
+						}
+				}
+				break;
+			case "14":
+				document.getElementById("lblres").textContent= inp
 				if (inp%2==0){
-					document.getElementById("lblres").textContent+= ", " + inp + " even";
-				}
-				else{
-					document.getElementById("lblres").textContent+= ", " + inp + " odd";
+						document.getElementById("lblres").textContent+= " even";
 					}
-			}		
-			break;
-		case "15":
-			for(let i=1; i<5; i=i+1){
-				inp=inp*2;
+					else{
+						document.getElementById("lblres").textContent+= " odd";
+						}
+				for(let i=1; i<5; i=i+1){
+					inp=inp*2;
+					if (inp%2==0){
+						document.getElementById("lblres").textContent+= ", " + inp + " even";
+					}
+					else{
+						document.getElementById("lblres").textContent+= ", " + inp + " odd";
+						}
+				}
+				break;
+			case "15":
+				document.getElementById("lblres").textContent= inp
 				if (inp%2==0){
-					document.getElementById("lblres").textContent+= ", " + inp + " even";
-				}
-				else{
-					document.getElementById("lblres").textContent+= ", " + inp + " odd";
+						document.getElementById("lblres").textContent+= " even";
 					}
-			}		
-			break;
-		case "16":
-			for(let i=1; i<5; i=i+1){
-				inp=inp*2;
+					else{
+						document.getElementById("lblres").textContent+= " odd";
+						}
+				for(let i=1; i<5; i=i+1){
+					inp=inp*2;
+					if (inp%2==0){
+						document.getElementById("lblres").textContent+= ", " + inp + " even";
+					}
+					else{
+						document.getElementById("lblres").textContent+= ", " + inp + " odd";
+						}
+				}
+				break;
+			case "16":
+				document.getElementById("lblres").textContent= inp
 				if (inp%2==0){
-					document.getElementById("lblres").textContent+= ", " + inp + " even";
-				}
-				else{
-					document.getElementById("lblres").textContent+= ", " + inp + " odd";
+						document.getElementById("lblres").textContent+= " even";
 					}
-			}		
-			break;
-		case "17":
-			for(let i=1; i<5; i=i+1){
-				inp=inp*2;
+					else{
+						document.getElementById("lblres").textContent+= " odd";
+						}
+				for(let i=1; i<5; i=i+1){
+					inp=inp*2;
+					if (inp%2==0){
+						document.getElementById("lblres").textContent+= ", " + inp + " even";
+					}
+					else{
+						document.getElementById("lblres").textContent+= ", " + inp + " odd";
+						}
+				}
+				break;
+			case "17":
+				document.getElementById("lblres").textContent= inp
 				if (inp%2==0){
-					document.getElementById("lblres").textContent+= ", " + inp + " even";
-				}
-				else{
-					document.getElementById("lblres").textContent+= ", " + inp + " odd";
+						document.getElementById("lblres").textContent+= " even";
 					}
-			}		
-			break;
-		case "18":
-			for(let i=1; i<5; i=i+1){
-				inp=inp*2;
+					else{
+						document.getElementById("lblres").textContent+= " odd";
+						}
+				for(let i=1; i<5; i=i+1){
+					inp=inp*2;
+					if (inp%2==0){
+						document.getElementById("lblres").textContent+= ", " + inp + " even";
+					}
+					else{
+						document.getElementById("lblres").textContent+= ", " + inp + " odd";
+						}
+				}
+				break;
+			case "18":
+				document.getElementById("lblres").textContent= inp
 				if (inp%2==0){
-					document.getElementById("lblres").textContent+= ", " + inp + " even";
-				}
-				else{
-					document.getElementById("lblres").textContent+= ", " + inp + " odd";
+						document.getElementById("lblres").textContent+= " even";
 					}
-			}		
-			break;
-
-		case "19":
-			for(let i=1; i<5; i=i+1){
-				inp=inp*2;
+					else{
+						document.getElementById("lblres").textContent+= " odd";
+						}
+				for(let i=1; i<5; i=i+1){
+					inp=inp*2;
+					if (inp%2==0){
+						document.getElementById("lblres").textContent+= ", " + inp + " even";
+					}
+					else{
+						document.getElementById("lblres").textContent+= ", " + inp + " odd";
+						}
+				}
+				break;
+			case "19":
+				document.getElementById("lblres").textContent= inp
 				if (inp%2==0){
-					document.getElementById("lblres").textContent+= ", " + inp + " even";
-				}
-				else{
-					document.getElementById("lblres").textContent+= ", " + inp + " odd";
+						document.getElementById("lblres").textContent+= " even";
 					}
-			}		
-			break;
-		case "20":
-			for(let i=1; i<5; i=i+1){
-				inp=inp*2;
+					else{
+						document.getElementById("lblres").textContent+= " odd";
+						}
+				for(let i=1; i<5; i=i+1){
+					inp=inp*2;
+					if (inp%2==0){
+						document.getElementById("lblres").textContent+= ", " + inp + " even";
+					}
+					else{
+						document.getElementById("lblres").textContent+= ", " + inp + " odd";
+						}
+				}
+				break;
+			case "20":
+				document.getElementById("lblres").textContent= inp
 				if (inp%2==0){
-					document.getElementById("lblres").textContent+= ", " + inp + " even";
-				}
-				else{
-					document.getElementById("lblres").textContent+= ", " + inp + " odd";
+						document.getElementById("lblres").textContent+= " even";
 					}
-			}		
-			break;
-		default:
-			alert("number is a isn't an integer, less than 6, or greater than 20");			
-			break;
-		}
+					else{
+						document.getElementById("lblres").textContent+= " odd";
+						}
+				for(let i=1; i<5; i=i+1){
+					inp=inp*2;
+					if (inp%2==0){
+						document.getElementById("lblres").textContent+= ", " + inp + " even";
+					}
+					else{
+						document.getElementById("lblres").textContent+= ", " + inp + " odd";
+						}
+				}
+				break;
+			default:
+				alert("number is a isn't an integer, less than 6, or greater than 20");			
+				break;
+		} //ends switch(inp)
+	} //ends else from if(dis=="")
 }
